@@ -11,191 +11,266 @@
     <style>
         body {
             font-family: 'Inter', 'Noto Sans JP', sans-serif;
-            background-color: #f1f5f9; /* Tailwind slate-100 */
-            -webkit-tap-highlight-color: transparent; /* スマホタップ時のハイライト消去 */
+            background-color: #f1f5f9;
+            -webkit-tap-highlight-color: transparent;
         }
     </style>
 </head>
-<body class="text-gray-800 min-h-screen pb-12">
+<body class="text-gray-800 min-h-screen pb-16">
 
-    <!-- Header (Sticky for mobile convenience) -->
-    <header class="bg-[#1e6f43] text-white sticky top-0 z-10 shadow-md px-4 py-4 mb-6">
+    <!-- Header -->
+    <header class="bg-[#1e6f43] text-white sticky top-0 z-10 shadow-md px-4 py-5 mb-6">
         <div class="max-w-lg mx-auto flex items-center justify-between">
-            <h1 class="text-xl font-bold flex items-center gap-2">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
-                POG 2026-27 指名馬
+            <h1 class="text-2xl font-bold flex items-center gap-2">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                POG 2026-27
             </h1>
-            <span class="text-sm bg-green-800 px-2 py-1 rounded-full font-medium">全15頭</span>
+            <span class="text-base bg-green-800 px-3 py-1.5 rounded-full font-medium">全15頭</span>
         </div>
     </header>
 
-    <div class="max-w-lg mx-auto px-2 sm:px-4">
-        <!-- List Container (Simple 1-row List) -->
-        <div class="bg-white rounded-lg shadow-sm border border-gray-200 divide-y divide-gray-200 mb-6">
+    <div class="max-w-lg mx-auto px-3 sm:px-4">
+        <!-- List Container -->
+        <div class="bg-white rounded-xl shadow-sm border border-gray-200 divide-y divide-gray-200 mb-6">
 
             <!-- 1頭目 -->
-            <div class="flex items-center justify-between p-3.5">
+            <div class="flex items-center justify-between p-4">
                 <div class="pr-2 flex-1">
-                    <h2 class="text-base sm:text-lg font-bold text-gray-900 leading-tight">01. ジャンゴッド <span class="text-blue-600 text-sm ml-1 font-normal">(牡)</span></h2>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1.5">父:キタサンブラック / 母:マーゴットディド</p>
+                    <h2 class="text-lg sm:text-xl font-bold text-gray-900 leading-tight tracking-tight">01. ジャンゴッド <span class="text-blue-600 text-sm sm:text-base ml-1 font-medium">(牡)</span></h2>
+                    <p class="text-sm sm:text-base text-gray-600 mt-2">父:キタサンブラック<br>母:マーゴットディド</p>
                 </div>
-                <a href="https://db.netkeiba.com/horse/bbs/2024106624/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-xs sm:text-sm font-medium py-2 px-3 sm:px-4 rounded shadow-sm transition-colors">
-                    掲示板
-                </a>
+                <div class="flex items-center gap-2">
+                    <a href="https://search.yahoo.co.jp/realtime/search?p=ジャンゴッド" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors self-start mt-1">
+                        SNS
+                    </a>
+                    <a href="https://db.netkeiba.com/horse/bbs/2024106624/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors">
+                        掲示板
+                    </a>
+                </div>
             </div>
 
             <!-- 2頭目 -->
-            <div class="flex items-center justify-between p-3.5">
+            <div class="flex items-center justify-between p-4">
                 <div class="pr-2 flex-1">
-                    <h2 class="text-base sm:text-lg font-bold text-gray-900 leading-tight">02. ジーティーサクラ <span class="text-red-500 text-sm ml-1 font-normal">(牝)</span></h2>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1.5">父:キタサンブラック / 母:マニーズオンシャーロット</p>
+                    <h2 class="text-lg sm:text-xl font-bold text-gray-900 leading-tight tracking-tight">02. ジーティーサクラ <span class="text-red-500 text-sm sm:text-base ml-1 font-medium">(牝)</span></h2>
+                    <p class="text-sm sm:text-base text-gray-600 mt-2">父:キタサンブラック<br>母:マニーズオンシャーロット</p>
                 </div>
-                <a href="https://db.netkeiba.com/horse/bbs/2024106614/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-xs sm:text-sm font-medium py-2 px-3 sm:px-4 rounded shadow-sm transition-colors">
-                    掲示板
-                </a>
+                <div class="flex items-center gap-2">
+                    <a href="https://search.yahoo.co.jp/realtime/search?p=ジーティーサクラ" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors self-start mt-1">
+                        SNS
+                    </a>
+                    <a href="https://db.netkeiba.com/horse/bbs/2024106614/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors">
+                        掲示板
+                    </a>
+                </div>
             </div>
 
             <!-- 3頭目 -->
-            <div class="flex items-center justify-between p-3.5">
+            <div class="flex items-center justify-between p-4">
                 <div class="pr-2 flex-1">
-                    <h2 class="text-base sm:text-lg font-bold text-gray-900 leading-tight">03. ノヴァヴェローチェ <span class="text-blue-600 text-sm ml-1 font-normal">(牡)</span></h2>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1.5">父:エフフォーリア / 母:チャイマックス</p>
+                    <h2 class="text-lg sm:text-xl font-bold text-gray-900 leading-tight tracking-tight">03. ノヴァヴェローチェ <span class="text-blue-600 text-sm sm:text-base ml-1 font-medium">(牡)</span></h2>
+                    <p class="text-sm sm:text-base text-gray-600 mt-2">父:エフフォーリア<br>母:チャイマックス</p>
                 </div>
-                <a href="https://db.netkeiba.com/horse/bbs/2024106455/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-xs sm:text-sm font-medium py-2 px-3 sm:px-4 rounded shadow-sm transition-colors">
-                    掲示板
-                </a>
+                <div class="flex items-center gap-2">
+                    <a href="https://search.yahoo.co.jp/realtime/search?p=ノヴァヴェローチェ" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors self-start mt-1">
+                        SNS
+                    </a>
+                    <a href="https://db.netkeiba.com/horse/bbs/2024106455/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors">
+                        掲示板
+                    </a>
+                </div>
             </div>
 
             <!-- 4頭目 -->
-            <div class="flex items-center justify-between p-3.5">
+            <div class="flex items-center justify-between p-4">
                 <div class="pr-2 flex-1">
-                    <h2 class="text-base sm:text-lg font-bold text-gray-900 leading-tight">04. エクアトーレ <span class="text-red-500 text-sm ml-1 font-normal">(牝)</span></h2>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1.5">父:キタサンブラック / 母:シャトーブランシュ</p>
+                    <h2 class="text-lg sm:text-xl font-bold text-gray-900 leading-tight tracking-tight">04. エクアトーレ <span class="text-red-500 text-sm sm:text-base ml-1 font-medium">(牝)</span></h2>
+                    <p class="text-sm sm:text-base text-gray-600 mt-2">父:キタサンブラック<br>母:シャトーブランシュ</p>
                 </div>
-                <a href="https://db.netkeiba.com/horse/bbs/2024106349/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-xs sm:text-sm font-medium py-2 px-3 sm:px-4 rounded shadow-sm transition-colors">
-                    掲示板
-                </a>
+                <div class="flex items-center gap-2">
+                    <a href="https://search.yahoo.co.jp/realtime/search?p=エクアトーレ" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors self-start mt-1">
+                        SNS
+                    </a>
+                    <a href="https://db.netkeiba.com/horse/bbs/2024106349/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors">
+                        掲示板
+                    </a>
+                </div>
             </div>
 
             <!-- 5頭目 -->
-            <div class="flex items-center justify-between p-3.5">
+            <div class="flex items-center justify-between p-4">
                 <div class="pr-2 flex-1">
-                    <h2 class="text-base sm:text-lg font-bold text-gray-900 leading-tight">05. アスクレコードモア <span class="text-blue-600 text-sm ml-1 font-normal">(牡)</span></h2>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1.5">父:エピファネイア / 母:カリーナミア</p>
+                    <h2 class="text-lg sm:text-xl font-bold text-gray-900 leading-tight tracking-tight">05. アスクレコードモア <span class="text-blue-600 text-sm sm:text-base ml-1 font-medium">(牡)</span></h2>
+                    <p class="text-sm sm:text-base text-gray-600 mt-2">父:エピファネイア<br>母:カリーナミア</p>
                 </div>
-                <a href="https://db.netkeiba.com/horse/bbs/2024105811/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-xs sm:text-sm font-medium py-2 px-3 sm:px-4 rounded shadow-sm transition-colors">
-                    掲示板
-                </a>
+                <div class="flex items-center gap-2">
+                    <a href="https://search.yahoo.co.jp/realtime/search?p=アスクレコードモア" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors self-start mt-1">
+                        SNS
+                    </a>
+                    <a href="https://db.netkeiba.com/horse/bbs/2024105811/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors">
+                        掲示板
+                    </a>
+                </div>
             </div>
 
             <!-- 6頭目 -->
-            <div class="flex items-center justify-between p-3.5">
+            <div class="flex items-center justify-between p-4">
                 <div class="pr-2 flex-1">
-                    <h2 class="text-base sm:text-lg font-bold text-gray-900 leading-tight">06. ヴェルバーニア <span class="text-blue-600 text-sm ml-1 font-normal">(牡)</span></h2>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1.5">父:キタサンブラック / 母:アドマイヤローザ</p>
+                    <h2 class="text-lg sm:text-xl font-bold text-gray-900 leading-tight tracking-tight">06. ヴェルバーニア <span class="text-blue-600 text-sm sm:text-base ml-1 font-medium">(牡)</span></h2>
+                    <p class="text-sm sm:text-base text-gray-600 mt-2">父:キタサンブラック<br>母:アドマイヤローザ</p>
                 </div>
-                <a href="https://db.netkeiba.com/horse/bbs/2024106139/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-xs sm:text-sm font-medium py-2 px-3 sm:px-4 rounded shadow-sm transition-colors">
-                    掲示板
-                </a>
+                <div class="flex items-center gap-2">
+                    <a href="https://search.yahoo.co.jp/realtime/search?p=ヴェルバーニア" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors self-start mt-1">
+                        SNS
+                    </a>
+                    <a href="https://db.netkeiba.com/horse/bbs/2024106139/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors">
+                        掲示板
+                    </a>
+                </div>
             </div>
 
             <!-- 7頭目 -->
-            <div class="flex items-center justify-between p-3.5">
+            <div class="flex items-center justify-between p-4">
                 <div class="pr-2 flex-1">
-                    <h2 class="text-base sm:text-lg font-bold text-gray-900 leading-tight">07. ククイプカ <span class="text-blue-600 text-sm ml-1 font-normal">(牡)</span></h2>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1.5">父:マカヒキ / 母:アパパネ</p>
+                    <h2 class="text-lg sm:text-xl font-bold text-gray-900 leading-tight tracking-tight">07. ククイプカ <span class="text-blue-600 text-sm sm:text-base ml-1 font-medium">(牡)</span></h2>
+                    <p class="text-sm sm:text-base text-gray-600 mt-2">父:マカヒキ<br>母:アパパネ</p>
                 </div>
-                <a href="https://db.netkeiba.com/horse/bbs/2024106142/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-xs sm:text-sm font-medium py-2 px-3 sm:px-4 rounded shadow-sm transition-colors">
-                    掲示板
-                </a>
+                <div class="flex items-center gap-2">
+                    <a href="https://search.yahoo.co.jp/realtime/search?p=ククイプカ" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors self-start mt-1">
+                        SNS
+                    </a>
+                    <a href="https://db.netkeiba.com/horse/bbs/2024106142/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors">
+                        掲示板
+                    </a>
+                </div>
             </div>
 
             <!-- 8頭目 -->
-            <div class="flex items-center justify-between p-3.5">
+            <div class="flex items-center justify-between p-4">
                 <div class="pr-2 flex-1">
-                    <h2 class="text-base sm:text-lg font-bold text-gray-900 leading-tight">08. スプレマレイナ <span class="text-red-500 text-sm ml-1 font-normal">(牝)</span></h2>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1.5">父:モーリス / 母:グランアレグリア</p>
+                    <h2 class="text-lg sm:text-xl font-bold text-gray-900 leading-tight tracking-tight">08. スプレマレイナ <span class="text-red-500 text-sm sm:text-base ml-1 font-medium">(牝)</span></h2>
+                    <p class="text-sm sm:text-base text-gray-600 mt-2">父:モーリス<br>母:グランアレグリア</p>
                 </div>
-                <a href="https://db.netkeiba.com/horse/bbs/2024106297/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-xs sm:text-sm font-medium py-2 px-3 sm:px-4 rounded shadow-sm transition-colors">
-                    掲示板
-                </a>
+                <div class="flex items-center gap-2">
+                    <a href="https://search.yahoo.co.jp/realtime/search?p=スプレマレイナ" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors self-start mt-1">
+                        SNS
+                    </a>
+                    <a href="https://db.netkeiba.com/horse/bbs/2024106297/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors">
+                        掲示板
+                    </a>
+                </div>
             </div>
 
             <!-- 9頭目 -->
-            <div class="flex items-center justify-between p-3.5">
+            <div class="flex items-center justify-between p-4">
                 <div class="pr-2 flex-1">
-                    <h2 class="text-base sm:text-lg font-bold text-gray-900 leading-tight">09. ユイーナ <span class="text-red-500 text-sm ml-1 font-normal">(牝)</span></h2>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1.5">父:サリオス / 母:セットスクエア</p>
+                    <h2 class="text-lg sm:text-xl font-bold text-gray-900 leading-tight tracking-tight">09. ユイーナ <span class="text-red-500 text-sm sm:text-base ml-1 font-medium">(牝)</span></h2>
+                    <p class="text-sm sm:text-base text-gray-600 mt-2">父:サリオス<br>母:セットスクエア</p>
                 </div>
-                <a href="https://db.netkeiba.com/horse/bbs/2024106418/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-xs sm:text-sm font-medium py-2 px-3 sm:px-4 rounded shadow-sm transition-colors">
-                    掲示板
-                </a>
+                <div class="flex items-center gap-2">
+                    <a href="https://search.yahoo.co.jp/realtime/search?p=ユイーナ" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors self-start mt-1">
+                        SNS
+                    </a>
+                    <a href="https://db.netkeiba.com/horse/bbs/2024106418/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors">
+                        掲示板
+                    </a>
+                </div>
             </div>
 
             <!-- 10頭目 -->
-            <div class="flex items-center justify-between p-3.5">
+            <div class="flex items-center justify-between p-4">
                 <div class="pr-2 flex-1">
-                    <h2 class="text-base sm:text-lg font-bold text-gray-900 leading-tight">10. インテルラゴス <span class="text-red-500 text-sm ml-1 font-normal">(牝)</span></h2>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1.5">父:インディチャンプ / 母:ダンサール</p>
+                    <h2 class="text-lg sm:text-xl font-bold text-gray-900 leading-tight tracking-tight">10. インテルラゴス <span class="text-red-500 text-sm sm:text-base ml-1 font-medium">(牝)</span></h2>
+                    <p class="text-sm sm:text-base text-gray-600 mt-2">父:インディチャンプ<br>母:ダンサール</p>
                 </div>
-                <a href="https://db.netkeiba.com/horse/bbs/2024106448/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-xs sm:text-sm font-medium py-2 px-3 sm:px-4 rounded shadow-sm transition-colors">
-                    掲示板
-                </a>
+                <div class="flex items-center gap-2">
+                    <a href="https://search.yahoo.co.jp/realtime/search?p=インテルラゴス" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors self-start mt-1">
+                        SNS
+                    </a>
+                    <a href="https://db.netkeiba.com/horse/bbs/2024106448/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors">
+                        掲示板
+                    </a>
+                </div>
             </div>
 
             <!-- 11頭目 -->
-            <div class="flex items-center justify-between p-3.5">
+            <div class="flex items-center justify-between p-4">
                 <div class="pr-2 flex-1">
-                    <h2 class="text-base sm:text-lg font-bold text-gray-900 leading-tight">11. カマラデロボス <span class="text-blue-600 text-sm ml-1 font-normal">(牡)</span></h2>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1.5">父:リオンディーズ / 母:ロカ</p>
+                    <h2 class="text-lg sm:text-xl font-bold text-gray-900 leading-tight tracking-tight">11. カマラデロボス <span class="text-blue-600 text-sm sm:text-base ml-1 font-medium">(牡)</span></h2>
+                    <p class="text-sm sm:text-base text-gray-600 mt-2">父:リオンディーズ<br>母:ロカ</p>
                 </div>
-                <a href="https://db.netkeiba.com/horse/bbs/2024106748/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-xs sm:text-sm font-medium py-2 px-3 sm:px-4 rounded shadow-sm transition-colors">
-                    掲示板
-                </a>
+                <div class="flex items-center gap-2">
+                    <a href="https://search.yahoo.co.jp/realtime/search?p=カマラデロボス" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors self-start mt-1">
+                        SNS
+                    </a>
+                    <a href="https://db.netkeiba.com/horse/bbs/2024106748/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors">
+                        掲示板
+                    </a>
+                </div>
             </div>
 
             <!-- 12頭目 -->
-            <div class="flex items-center justify-between p-3.5">
+            <div class="flex items-center justify-between p-4">
                 <div class="pr-2 flex-1">
-                    <h2 class="text-base sm:text-lg font-bold text-gray-900 leading-tight">12. ホウオウシュウ <span class="text-blue-600 text-sm ml-1 font-normal">(牡)</span></h2>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1.5">父:レイデオロ / 母:スペシャルグルーヴ</p>
+                    <h2 class="text-lg sm:text-xl font-bold text-gray-900 leading-tight tracking-tight">12. ホウオウシュウ <span class="text-blue-600 text-sm sm:text-base ml-1 font-medium">(牡)</span></h2>
+                    <p class="text-sm sm:text-base text-gray-600 mt-2">父:レイデオロ<br>母:スペシャルグルーヴ</p>
                 </div>
-                <a href="https://db.netkeiba.com/horse/bbs/2024106410/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-xs sm:text-sm font-medium py-2 px-3 sm:px-4 rounded shadow-sm transition-colors">
-                    掲示板
-                </a>
+                <div class="flex items-center gap-2">
+                    <a href="https://search.yahoo.co.jp/realtime/search?p=ホウオウシュウ" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors self-start mt-1">
+                        SNS
+                    </a>
+                    <a href="https://db.netkeiba.com/horse/bbs/2024106410/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors">
+                        掲示板
+                    </a>
+                </div>
             </div>
 
             <!-- 13頭目 -->
-            <div class="flex items-center justify-between p-3.5">
+            <div class="flex items-center justify-between p-4">
                 <div class="pr-2 flex-1">
-                    <h2 class="text-base sm:text-lg font-bold text-gray-900 leading-tight">13. ブックオブケルズ <span class="text-blue-600 text-sm ml-1 font-normal">(牡)</span></h2>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1.5">父:リアルスティール / 母:シャンブルドット</p>
+                    <h2 class="text-lg sm:text-xl font-bold text-gray-900 leading-tight tracking-tight">13. ブックオブケルズ <span class="text-blue-600 text-sm sm:text-base ml-1 font-medium">(牡)</span></h2>
+                    <p class="text-sm sm:text-base text-gray-600 mt-2">父:リアルスティール<br>母:シャンブルドット</p>
                 </div>
-                <a href="https://db.netkeiba.com/horse/bbs/2024106356/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-xs sm:text-sm font-medium py-2 px-3 sm:px-4 rounded shadow-sm transition-colors">
-                    掲示板
-                </a>
+                <div class="flex items-center gap-2">
+                    <a href="https://search.yahoo.co.jp/realtime/search?p=ブックオブケルズ" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors self-start mt-1">
+                        SNS
+                    </a>
+                    <a href="https://db.netkeiba.com/horse/bbs/2024106356/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors">
+                        掲示板
+                    </a>
+                </div>
             </div>
 
             <!-- 14頭目 -->
-            <div class="flex items-center justify-between p-3.5">
+            <div class="flex items-center justify-between p-4">
                 <div class="pr-2 flex-1">
-                    <h2 class="text-base sm:text-lg font-bold text-gray-900 leading-tight">14. ラードンチェイス <span class="text-blue-600 text-sm ml-1 font-normal">(牡)</span></h2>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1.5">父:モズアスコット / 母:ライトファンタジア</p>
+                    <h2 class="text-lg sm:text-xl font-bold text-gray-900 leading-tight tracking-tight">14. ラードンチェイス <span class="text-blue-600 text-sm sm:text-base ml-1 font-medium">(牡)</span></h2>
+                    <p class="text-sm sm:text-base text-gray-600 mt-2">父:モズアスコット<br>母:ライトファンタジア</p>
                 </div>
-                <a href="https://db.netkeiba.com/horse/bbs/2024103538/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-xs sm:text-sm font-medium py-2 px-3 sm:px-4 rounded shadow-sm transition-colors">
-                    掲示板
-                </a>
+                <div class="flex items-center gap-2">
+                    <a href="https://search.yahoo.co.jp/realtime/search?p=ラードンチェイス" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors self-start mt-1">
+                        SNS
+                    </a>
+                    <a href="https://db.netkeiba.com/horse/bbs/2024103538/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors">
+                        掲示板
+                    </a>
+                </div>
             </div>
 
             <!-- 15頭目 -->
-            <div class="flex items-center justify-between p-3.5">
+            <div class="flex items-center justify-between p-4">
                 <div class="pr-2 flex-1">
-                    <h2 class="text-base sm:text-lg font-bold text-gray-900 leading-tight">15. ホワイトブリーズ <span class="text-red-500 text-sm ml-1 font-normal">(牝)</span></h2>
-                    <p class="text-xs sm:text-sm text-gray-500 mt-1.5">父:アドマイヤマーズ / 母:ホワイトソックス</p>
+                    <h2 class="text-lg sm:text-xl font-bold text-gray-900 leading-tight tracking-tight">15. ホワイトブリーズ <span class="text-red-500 text-sm sm:text-base ml-1 font-medium">(牝)</span></h2>
+                    <p class="text-sm sm:text-base text-gray-600 mt-2">父:アドマイヤマーズ<br>母:ホワイトソックス</p>
                 </div>
-                <a href="https://db.netkeiba.com/horse/bbs/2024100755/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-xs sm:text-sm font-medium py-2 px-3 sm:px-4 rounded shadow-sm transition-colors">
-                    掲示板
-                </a>
+                <div class="flex items-center gap-2">
+                    <a href="https://search.yahoo.co.jp/realtime/search?p=ホワイトブリーズ" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors self-start mt-1">
+                        SNS
+                    </a>
+                    <a href="https://db.netkeiba.com/horse/bbs/2024100755/" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-[#1e6f43] hover:bg-[#165a35] active:bg-green-800 text-white text-sm sm:text-base font-bold py-2.5 px-3.5 rounded shadow-sm transition-colors">
+                        掲示板
+                    </a>
+                </div>
             </div>
 
         </div>
@@ -215,7 +290,7 @@
 
                 // 日時を表示するための要素を作成
                 const timeSpan = document.createElement('div');
-                timeSpan.className = "text-[10px] sm:text-xs text-gray-500 mt-1.5 text-center w-full tracking-tighter font-medium";
+                timeSpan.className = "text-xs sm:text-sm text-gray-500 mt-2 text-center w-full tracking-tighter font-semibold";
                 
                 // スマホ（ブラウザ）に保存されている前回タップ日時を取得
                 const savedTime = localStorage.getItem('pog_checked_' + horseId);
@@ -233,7 +308,6 @@
                 // ボタンがタップされたときの処理
                 link.addEventListener('click', () => {
                     const now = new Date();
-                    // 例: "6/7 10:30" の形式で取得
                     const timeStr = `${now.getMonth()+1}/${now.getDate()} ${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`;
                     
                     // スマホ（ブラウザのlocalStorage）に保存
